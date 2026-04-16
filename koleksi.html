@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#eae4b1",
+                    "primary-container": "#5d4037",
+                    "secondary-fixed": "#ffdbce",
+                    "on-tertiary-container": "#4e3d00",
+                    "on-primary-container": "#d4ada1",
+                    "tertiary-fixed": "#ffe088",
+                    "secondary-container": "#fed7ca",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "inverse-on-surface": "#f8f3be",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#5b4137",
+                    "surface-dim": "#e1dca9",
+                    "surface-container-low": "#fbf5c1",
+                    "primary-fixed-dim": "#e7bdb1",
+                    "surface-container-highest": "#eae4b1",
+                    "surface-container-high": "#f0eab6",
+                    "on-primary-fixed": "#2c160e",
+                    "on-surface": "#1e1c00",
+                    "outline-variant": "#d4c3be",
+                    "on-background": "#1e1c00",
+                    "on-secondary-fixed": "#2b160f",
+                    "tertiary": "#735c00",
+                    "surface-container": "#f6f0bb",
+                    "primary": "#442a22",
+                    "secondary-fixed-dim": "#e4beb2",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "inverse-primary": "#e7bdb1",
+                    "inverse-surface": "#34310d",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "secondary": "#75584d",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed-variant": "#5d4037",
+                    "surface": "#fffadf",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fffadf",
+                    "on-secondary-container": "#795c51",
+                    "primary-fixed": "#ffdbd0",
+                    "background": "#fffadf",
+                    "surface-tint": "#77574d",
+                    "outline": "#827470",
+                    "tertiary-container": "#cba72f",
+                    "on-surface-variant": "#504441",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#241a00",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-surface text-on-surface min-h-screen">
+<!-- Top Navigation Anchor -->
+<header class="bg-[#fffadf]/80 dark:bg-[#1e1c00]/80 backdrop-blur-xl docked full-width top-0 sticky z-50 no-border shadow-none bg-[#fbf5c1] dark:bg-[#2a2800]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#442a22] dark:text-[#eae4b1]" data-icon="menu_book">menu_book</span>
+<h1 class="font-['Noto_Serif'] font-bold tracking-tight text-2xl text-[#442a22] dark:text-[#eae4b1] tracking-tighter">
+                    Koleksi Lengkap
+                </h1>
+</div>
+<span class="material-symbols-outlined text-[#442a22] dark:text-[#eae4b1] text-3xl" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<main class="px-6 pt-6 max-w-screen-2xl mx-auto">
+<!-- Editorial Badge -->
+<p class="font-label text-secondary text-[10px] uppercase tracking-widest mb-2">Perpustakaan Cendekia</p>
+<h2 class="font-headline text-primary text-4xl font-bold mb-8 -ml-1">Cendekia Heritage</h2>
+<!-- The Nexus: Search Bar -->
+<div class="mb-8">
+<div class="relative group">
+<div class="absolute inset-y-0 left-6 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-secondary" data-icon="search">search</span>
+</div>
+<input class="w-full bg-surface-container-high border-none rounded-full py-4 pl-16 pr-6 text-on-surface placeholder:text-secondary focus:ring-2 focus:ring-primary transition-all duration-300 editorial-shadow" placeholder="Cari judul, penulis, atau topik..." type="text"/>
+</div>
+</div>
+<!-- Filter Tabs -->
+<div class="flex overflow-x-auto pb-4 gap-3 no-scrollbar">
+<button class="bg-primary text-surface px-6 py-2.5 rounded-full font-label font-bold text-sm whitespace-nowrap">Semua</button>
+<button class="bg-surface-container-low text-secondary px-6 py-2.5 rounded-full font-label font-medium text-sm whitespace-nowrap hover:bg-surface-container-high transition-colors">Sastra</button>
+<button class="bg-surface-container-low text-secondary px-6 py-2.5 rounded-full font-label font-medium text-sm whitespace-nowrap hover:bg-surface-container-high transition-colors">Sejarah</button>
+<button class="bg-surface-container-low text-secondary px-6 py-2.5 rounded-full font-label font-medium text-sm whitespace-nowrap hover:bg-surface-container-high transition-colors">Sains</button>
+<button class="bg-surface-container-low text-secondary px-6 py-2.5 rounded-full font-label font-medium text-sm whitespace-nowrap hover:bg-surface-container-high transition-colors">Seni</button>
+</div>
+<!-- Book Collection Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+<!-- Book Card 1 -->
+<div class="bg-surface-container-low rounded-xl p-4 flex gap-5 editorial-shadow group">
+<div class="w-32 h-44 shrink-0 rounded-lg overflow-hidden shadow-md">
+<img alt="Book Cover" class="w-full h-full object-cover" data-alt="vintage book cover with elegant gold filigree on a deep mahogany background in soft library lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnQX7RU_XAOKug0TmeROMmwBoAkavtWfZtmvwtcLdUst1Hu0jf9f6GBK0ksUgTctZ4z2NAwMgoYbmJLOHVjL5tmdb3MI5YB-kicVAPRT4ILWBvB4I_fexgkSv3mQkeYE0BQQeDvfKFC8OCmjsoUVXn12pUCjC_b5wZvCaf5Yij0DelVLu9rdTjjUsRx0j7J7AYO9EabBV3y2vNOLniwlNqZjePqeFcV3f5WUJJ3EcwwVmufWsMdWubud3Lmo8KDBrEZ98Xk_e5n2w"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<h3 class="font-headline text-primary text-xl font-bold leading-tight">Filosofi Teras</h3>
+<p class="font-body text-secondary text-sm mt-1">Henry Manampiring</p>
+<div class="flex items-center gap-1 mt-2">
+<span class="material-symbols-outlined text-tertiary text-lg" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-xs font-bold text-on-surface">5/5</span>
+<span class="text-secondary/40 px-2">•</span>
+<span class="font-label text-[10px] text-tertiary uppercase tracking-wider font-bold">Best Seller</span>
+</div>
+<p class="text-on-surface-variant text-xs mt-3 line-clamp-2 leading-relaxed italic">Panduan praktis Stoikisme untuk membantu kita menemukan ketenangan dalam hidup yang serba cepat.</p>
+</div>
+<div class="flex gap-2 mt-4">
+<button class="flex-1 bg-gradient-to-br from-primary to-primary-container text-surface py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest active:scale-95 transition-transform">Pinjam</button>
+<button class="flex-1 border border-outline-variant/20 py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest text-primary hover:bg-surface-container transition-colors">Detail</button>
+</div>
+</div>
+</div>
+<!-- Book Card 2 -->
+<div class="bg-surface-container-low rounded-xl p-4 flex gap-5 editorial-shadow group">
+<div class="w-32 h-44 shrink-0 rounded-lg overflow-hidden shadow-md">
+<img alt="Book Cover" class="w-full h-full object-cover" data-alt="classic historical book design with cream pages and dark leather spine texture in warm ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeZUYJAepzCj6gO5mihiZwmEFRmKBKzLN5g6kSLixk-_n1EZWm2lGPY0HQkIGWidX-htaiC5CiWSwjUY6GX1SqwArBD-0hg_nC7raKNf6lmmFUKx07RACbmtbgYySaqQ6109jh0jSJnhOD22Zlv7XJnW2KzCmJUPbkUEWkHSY6me8pqVgg4PonP0tDQgoszx3zoaoER68-uWmuDuomV6qwT0sB5kbJCWDzITlJbsGxQEUGppLAaIJ6jqQ30Gz_f-OLjQIqNNVL5eQ"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<h3 class="font-headline text-primary text-xl font-bold leading-tight">Bumi Manusia</h3>
+<p class="font-body text-secondary text-sm mt-1">Pramoedya Ananta Toer</p>
+<div class="flex items-center gap-1 mt-2">
+<span class="material-symbols-outlined text-tertiary text-lg" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-xs font-bold text-on-surface">5/5</span>
+<span class="text-secondary/40 px-2">•</span>
+<span class="font-label text-[10px] text-secondary uppercase tracking-wider font-bold">Klasik</span>
+</div>
+<p class="text-on-surface-variant text-xs mt-3 line-clamp-2 leading-relaxed italic">Mahakarya sastra Indonesia yang mengisahkan perjuangan Minke di masa kolonial.</p>
+</div>
+<div class="flex gap-2 mt-4">
+<button class="flex-1 bg-gradient-to-br from-primary to-primary-container text-surface py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest active:scale-95 transition-transform">Pinjam</button>
+<button onclick="window.location.href='detail.html'" class="flex-1 border border-outline-variant/20 py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest text-primary hover:bg-surface-container transition-colors">Detail</button>
+</div>
+</div>
+</div>
+<!-- Book Card 3 -->
+<div class="bg-surface-container-low rounded-xl p-4 flex gap-5 editorial-shadow group">
+<div class="w-32 h-44 shrink-0 rounded-lg overflow-hidden shadow-md">
+<img alt="Book Cover" class="w-full h-full object-cover" data-alt="abstract scientific illustration on a book cover representing cosmology and stars with golden accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_bXzLcDbrm6gcpeG-Jkao5O48oi8O5eSiPuZZcBaaX6D3ASDMEt3I7eW8nKYCkO_CxtIwcLiJr_T1CdYcaddbVSnYDFDjouW2zOfDg3l1SyjzRWcQLfSyA2TWdIYe1OagmzoSohTBmItK5fjWkMCkACPwdbcPLAbE0GL_hBg1npLi5KMVOCZZBZyanjePwCiT7p_FMJY4ylKDCmw9IsPAqT8eATTy-gRrYNb0BEm49Kuu3Z2ALrDe9r2N2_enlEIPlk4faFChEf0"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<h3 class="font-headline text-primary text-xl font-bold leading-tight">Sapiens</h3>
+<p class="font-body text-secondary text-sm mt-1">Yuval Noah Harari</p>
+<div class="flex items-center gap-1 mt-2">
+<span class="material-symbols-outlined text-tertiary text-lg" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-xs font-bold text-on-surface">5/5</span>
+<span class="text-secondary/40 px-2">•</span>
+<span class="font-label text-[10px] text-tertiary uppercase tracking-wider font-bold">Terpopuler</span>
+</div>
+<p class="text-on-surface-variant text-xs mt-3 line-clamp-2 leading-relaxed italic">Menjelajahi sejarah umat manusia dari Zaman Batu hingga revolusi kognitif.</p>
+</div>
+<div class="flex gap-2 mt-4">
+<button class="flex-1 bg-gradient-to-br from-primary to-primary-container text-surface py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest active:scale-95 transition-transform">Pinjam</button>
+<button class="flex-1 border border-outline-variant/20 py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest text-primary hover:bg-surface-container transition-colors">Detail</button>
+</div>
+</div>
+</div>
+<!-- Book Card 4 -->
+<div class="bg-surface-container-low rounded-xl p-4 flex gap-5 editorial-shadow group">
+<div class="w-32 h-44 shrink-0 rounded-lg overflow-hidden shadow-md">
+<img alt="Book Cover" class="w-full h-full object-cover" data-alt="modern minimalist book cover featuring a single artistic charcoal sketch on off-white paper texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDks6GcNMcd04C7a28VO8w4pwyKHEHzdTtir_IIpKubJ7uhyGm3JVz1tTS6sIosbA9GhtIdW5_acsiEqyRraajbbyh7YKs8L57hzO6Ti3U_r-u_MXlMUam9rF6-yHgI87v0na9OjLSzTOYfFrKV5TjQd7mdFNk6I8hoQZaKR93kEgPgAEsM_HbF95V3MKCHsG7KYFqVXwlzbNYlxUq003O0ifFlGImAFxVv6Mhp3JuT_9N1xjzinnwF60o7x5cmIM7zo06n7sTkjYM"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<h3 class="font-headline text-primary text-xl font-bold leading-tight">Laskar Pelangi</h3>
+<p class="font-body text-secondary text-sm mt-1">Andrea Hirata</p>
+<div class="flex items-center gap-1 mt-2">
+<span class="material-symbols-outlined text-tertiary text-lg" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label text-xs font-bold text-on-surface">5/5</span>
+<span class="text-secondary/40 px-2">•</span>
+<span class="font-label text-[10px] text-secondary uppercase tracking-wider font-bold">Inspiratif</span>
+</div>
+<p class="text-on-surface-variant text-xs mt-3 line-clamp-2 leading-relaxed italic">Kisah persahabatan dan perjuangan sepuluh anak di Pulau Belitung demi menggapai cita-cita.</p>
+</div>
+<div class="flex gap-2 mt-4">
+<button class="flex-1 bg-gradient-to-br from-primary to-primary-container text-surface py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest active:scale-95 transition-transform">Pinjam</button>
+<button class="flex-1 border border-outline-variant/20 py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest text-primary hover:bg-surface-container transition-colors">Detail</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<nav class="flex items-center justify-center gap-2 mt-12 py-8">
+<button class="w-10 h-10 flex items-center justify-center rounded-xl bg-surface-container-low text-primary border border-outline-variant/10 active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-xl bg-primary text-surface font-label font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-xl bg-surface-container-low text-primary hover:bg-surface-container transition-colors font-label font-bold">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-xl bg-surface-container-low text-primary hover:bg-surface-container transition-colors font-label font-bold">3</button>
+<span class="text-secondary mx-1">...</span>
+<button class="px-4 h-10 flex items-center justify-center rounded-xl bg-surface-container-low text-primary font-label font-bold gap-2 active:scale-95 transition-all">
+                Next
+                <span class="material-symbols-outlined text-lg" data-icon="chevron_right">chevron_right</span>
+</button>
+</nav>
+</main>
+<!-- Bottom Navigation Shell -->
+</body></html>

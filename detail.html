@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#75584d",
+                    "on-tertiary-fixed": "#241a00",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#eae4b1",
+                    "outline": "#827470",
+                    "secondary-container": "#fed7ca",
+                    "secondary-fixed": "#ffdbce",
+                    "inverse-surface": "#34310d",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#77574d",
+                    "secondary-fixed-dim": "#e4beb2",
+                    "surface-dim": "#e1dca9",
+                    "on-primary-container": "#d4ada1",
+                    "primary-container": "#5d4037",
+                    "inverse-primary": "#e7bdb1",
+                    "on-tertiary-container": "#4e3d00",
+                    "on-surface": "#1e1c00",
+                    "on-primary-fixed": "#2c160e",
+                    "on-secondary-fixed": "#2b160f",
+                    "surface-container-high": "#f0eab6",
+                    "primary-fixed-dim": "#e7bdb1",
+                    "surface": "#fffadf",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "primary-fixed": "#ffdbd0",
+                    "on-secondary-container": "#795c51",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#ffe088",
+                    "surface-container-low": "#fbf5c1",
+                    "on-primary-fixed-variant": "#5d4037",
+                    "tertiary": "#735c00",
+                    "primary": "#442a22",
+                    "inverse-on-surface": "#f8f3be",
+                    "tertiary-container": "#cba72f",
+                    "background": "#fffadf",
+                    "surface-variant": "#eae4b1",
+                    "outline-variant": "#d4c3be",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1e1c00",
+                    "surface-bright": "#fffadf",
+                    "on-surface-variant": "#504441",
+                    "surface-container": "#f6f0bb",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "on-secondary-fixed-variant": "#5b4137",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Noto Serif"
+                    ],
+                    "body": [
+                            "Manrope"
+                    ],
+                    "label": [
+                            "Manrope"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<link rel="stylesheet" href="style.css">
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fffadf] dark:bg-[#1e1c00] bg-opacity-80 backdrop-blur-3xl shadow-[0_8px_32px_rgba(30,28,0,0.06)] flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#442a22] dark:text-[#f6f0bb] scale-95 active:opacity-80 transition-transform">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-xl font-headline font-bold text-[#442a22] dark:text-[#eae4b1] -tracking-[0.02em]">The Academic Atelier</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-8 text-sm font-label uppercase tracking-widest">
+<a class="text-[#75584d] dark:text-[#d4c3be] hover:text-[#5d4037] dark:hover:text-[#fffadf] transition-all" href="#">Archive</a>
+<a class="text-[#442a22] dark:text-[#fffadf] font-bold" href="#">Catalog</a>
+<a class="text-[#75584d] dark:text-[#d4c3be] hover:text-[#5d4037] dark:hover:text-[#fffadf] transition-all" href="#">Curators</a>
+</nav>
+<button class="text-[#442a22] dark:text-[#f6f0bb] scale-95 active:opacity-80 transition-transform">
+<span class="material-symbols-outlined">bookmark</span>
+</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[618px] flex items-center bg-surface-container-low overflow-hidden px-6 md:px-12 py-20">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Book Cover -->
+<div class="lg:col-span-5 flex justify-center lg:justify-start">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/5 blur-2xl rounded-full"></div>
+<img alt="Bumi Manusia Cover" class="w-72 md:w-96 aspect-[2/3] object-cover rounded-lg shadow-2xl relative z-10 book-inner-stroke" data-alt="Classic vintage leather-bound book with gold embossed typography, elegant historical texture, soft museum lighting on a wooden desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTamPztxyugDPOo5ieLzTN7MqU0elIcsbpr2a0G4ONONaFe1Ao4AP0zLqkbaSKTCfXE4Hhew-6VcTgTHJAbHThr7yN4WDszitBp7jXseSi2cScjChBlbxiOXLzj7LJigznKx2B-pcZjUHbrJY4T_-mOCvD_ZjnP09NhNZ-zCaWBBXt03L71Tx_Rh0VfX_UGLmJF5XUt0KG4sxBVimPZxo6bE77MhxQMQANL42rnoW2Ct3fYIF446mVHQss0Ul50-LCiNjlm5oHZtY"/>
+<!-- Historical Badge Overlay -->
+<div class="absolute -top-6 -right-6 z-20 bg-tertiary text-on-tertiary px-4 py-4 rounded-full flex flex-col items-center justify-center shadow-lg transform rotate-12 border-4 border-surface">
+<span class="text-[10px] font-label font-bold uppercase tracking-tighter leading-none">Acclaimed</span>
+<span class="text-lg font-headline font-bold">Classic</span>
+</div>
+</div>
+</div>
+<!-- Text Content -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<span class="label-md text-secondary font-label font-semibold uppercase tracking-[0.2em] mb-4">Masterpiece Collection</span>
+<h2 class="text-5xl md:text-7xl font-headline font-extrabold text-primary leading-tight mb-2 -tracking-[0.03em]">Bumi Manusia</h2>
+<p class="text-2xl font-headline italic text-secondary-container bg-primary px-4 py-1 mb-8">Pramoedya Ananta Toer</p>
+<div class="flex flex-wrap gap-4 mt-4">
+<button onclick="window.location.href='pinjam.html'" class="hero-gradient text-on-primary px-10 py-4 rounded-full font-label font-bold uppercase tracking-widest text-sm shadow-xl hover:opacity-90 active:scale-95 transition-all">
+                            PINJAM SEKARANG
+                        </button>
+<button class="border border-outline-variant text-primary px-10 py-4 rounded-full font-label font-bold uppercase tracking-widest text-sm hover:bg-surface-container transition-all active:scale-95">
+                            BACA SAMPEL
+                        </button>
+</div>
+<div class="mt-12 grid grid-cols-3 gap-8 border-t border-outline-variant pt-8 w-full max-w-md">
+<div>
+<p class="text-[10px] font-label font-bold uppercase text-secondary tracking-widest">Year</p>
+<p class="text-lg font-headline text-primary">1980</p>
+</div>
+<div>
+<p class="text-[10px] font-label font-bold uppercase text-secondary tracking-widest">Genre</p>
+<p class="text-lg font-headline text-primary">Historical</p>
+</div>
+<div>
+<p class="text-[10px] font-label font-bold uppercase text-secondary tracking-widest">Rating</p>
+<p class="text-lg font-headline text-primary">4.8/5</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Grid (Asymmetric Layout) -->
+<section class="max-w-7xl mx-auto px-6 md:px-12 py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Main Synopsis -->
+<div class="lg:col-span-7">
+<div class="mb-12">
+<span class="text-tertiary font-label text-xs font-bold uppercase tracking-[0.3em] block mb-4">Curator's Note</span>
+<h3 class="text-3xl font-headline font-bold text-primary mb-8 ml-8">Sinopsis Kurator</h3>
+<div class="prose prose-stone prose-lg text-on-surface-variant font-body leading-relaxed space-y-6">
+<p class="first-letter:text-6xl first-letter:font-headline first-letter:text-primary first-letter:float-left first-letter:mr-4 first-letter:mt-2">
+                                Bumi Manusia bukan sekadar narasi roman antara Minke dan Annelies Mellema; ia adalah monumen literasi yang membedah anatomi kolonialisme di Hindia Belanda pada pergantian abad ke-20. Sebagai pembuka dari Tetralogi Buru, karya ini lahir dari kedalaman pengasingan, dituliskan kembali dari memori Pramoedya selama masa tahanannya di Pulau Buru.
+                            </p>
+<p>
+                                Melalui kacamata Minke, seorang pemuda pribumi yang tercerahkan oleh pendidikan Barat namun terbentur oleh realitas rasialismenya sendiri, Pramoedya menggambarkan transisi sebuah bangsa dari tatanan feodal menuju fajar kesadaran nasional. Karakter Nyai Ontosoroh muncul sebagai personifikasi ketangguhan intelektual dan martabat, menantang otoritas hukum kolonial yang tak memihak pada kaumnya.
+                            </p>
+<div class="bg-surface-container p-8 rounded-xl border-l-4 border-tertiary italic shadow-sm">
+                                "Berbahagialah dia yang makan dari keringatnya sendiri, bersuka ria karena usahanya sendiri, dan maju karena pengalamannya sendiri."
+                            </div>
+</div>
+</div>
+</div>
+<!-- Bibliography Sidebar -->
+<div class="lg:col-span-5">
+<div class="bg-surface-container-high p-10 rounded-2xl sticky top-28">
+<h3 class="text-xl font-headline font-bold text-primary mb-8 border-b border-outline-variant pb-4">Informasi Bibliografi</h3>
+<dl class="space-y-6">
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-2">
+<dt class="text-xs font-label uppercase tracking-widest text-secondary">Penerbit</dt>
+<dd class="text-sm font-bold text-primary">Lentera Dipantara</dd>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-2">
+<dt class="text-xs font-label uppercase tracking-widest text-secondary">ISBN</dt>
+<dd class="text-sm font-bold text-primary">978-979-97312-3-5</dd>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-2">
+<dt class="text-xs font-label uppercase tracking-widest text-secondary">Tahun Terbit</dt>
+<dd class="text-sm font-bold text-primary">Edisi Terbaru 2015</dd>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-2">
+<dt class="text-xs font-label uppercase tracking-widest text-secondary">Bahasa</dt>
+<dd class="text-sm font-bold text-primary">Indonesia</dd>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-2">
+<dt class="text-xs font-label uppercase tracking-widest text-secondary">Halaman</dt>
+<dd class="text-sm font-bold text-primary">535 hlm</dd>
+</div>
+</dl>
+<!-- Historical Significance Badge -->
+<div class="mt-12 bg-primary-container text-surface p-6 rounded-xl flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<div>
+<h4 class="text-sm font-label font-bold uppercase tracking-wider mb-1">Historical Significance</h4>
+<p class="text-xs text-on-primary-container opacity-90 leading-snug">
+                                    Dilarang selama era Orde Baru karena kekuatan ideologisnya, buku ini kini diakui sebagai salah satu karya sastra terpenting dalam sejarah Indonesia modern.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Koleksi Serupa Section -->
+<section class="bg-surface-dim py-24">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="text-secondary font-label text-xs font-bold uppercase tracking-[0.3em] block mb-2">Recommended</span>
+<h3 class="text-4xl font-headline font-bold text-primary">Koleksi Serupa</h3>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-surface transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-surface transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Scroll -->
+<div class="flex gap-8 overflow-x-auto pb-8 snap-x no-scrollbar">
+<!-- Card 1 -->
+<div class="flex-none w-64 snap-start">
+<div class="bg-surface-container-low rounded-xl p-4 transition-transform hover:-translate-y-2 cursor-pointer group">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 relative">
+<img alt="Anak Semua Bangsa" class="w-full h-full object-cover book-inner-stroke" data-alt="Antique Indonesian book cover with intricate woodcut illustration, sepia tones, historical academic aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD3d_id1700JdRoCjWNZYsMEfNoUkwRQYME2LP-_FUzloVE2-3ie9d_Jlp0Zkv-lXlNDiHh3MHcn16eFcLVicF1YXuzsI3_mM5csHKSjp3PX88yCvouBotnWGCvKLgGX189V8fIbPMyM6qSnTLrYtKyKwMlCjmX1SP_8w46b5FzVAdrruUrHGZ_4PQ2IycQ_wMAhgtrGtrbsR9G8o2gHOhrDsPibbC1TMdO_1XieNzLRwquxBRGltkwztf7T4qVfRkbWY2NxGHbk4"/>
+</div>
+<h4 class="font-headline font-bold text-primary mb-1">Anak Semua Bangsa</h4>
+<p class="text-xs text-secondary font-label uppercase tracking-widest">Pramoedya Ananta Toer</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex-none w-64 snap-start">
+<div class="bg-surface-container-low rounded-xl p-4 transition-transform hover:-translate-y-2 cursor-pointer group">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 relative">
+<img alt="Jejak Langkah" class="w-full h-full object-cover book-inner-stroke" data-alt="Old manuscript style book cover, dark brown textured leather, gold leaf lettering, moody library environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDclMWFdnlDgyKRBLBIyzA-_-79oRk2TPUpBI8uKIZ47giwAQoRCjsKt0PoLJaz7IHXU8tZC7aVUTWWaakxEM9DRtuxoTsU-K3oSg5AeK3NHuRl63ecfNdGpSgCT1UAn34zOZsXW0E38zSfyfAniibFhLK47pmhWEbW_tHyR5xkrkxaWSFVnergzleaQXSnLYFkllNZiy1izt4r0UTi9cZPZ-MtwSbNg8k8v1v54IPvIopnME_ybi7sGVWAe8gkVkAFEWoBJYJmnMs"/>
+</div>
+<h4 class="font-headline font-bold text-primary mb-1">Jejak Langkah</h4>
+<p class="text-xs text-secondary font-label uppercase tracking-widest">Pramoedya Ananta Toer</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex-none w-64 snap-start">
+<div class="bg-surface-container-low rounded-xl p-4 transition-transform hover:-translate-y-2 cursor-pointer group">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 relative">
+<img alt="Rumah Kaca" class="w-full h-full object-cover book-inner-stroke" data-alt="Ancient archives book shelf, close up of a spine of an old Indonesian novel, soft natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjKL5bV8tVOuTI9qgFaTRx36xJZgBLUCZMbeVfNlYB8oXZVV8DaKJR4WY7pQJeypF5OClZt1rNNmLy_FGR9BkDQYatzYjsxKzNe3c3u8S1Lmqvpgawm3PeWnZNh8kJysQlhvkYKTMnE8hWVC_wm6V4QYRKH91JMFTuefa3b0v0GE_VU6ybizhC1PAsCQLVkRKMapxx6ECiFApyPFyUyFqlIWpS7ZoP8fFuAVhLM5gIpriNR1W85gVZyjh3Wci0k2sNkTvF6cAm3H4"/>
+</div>
+<h4 class="font-headline font-bold text-primary mb-1">Rumah Kaca</h4>
+<p class="text-xs text-secondary font-label uppercase tracking-widest">Pramoedya Ananta Toer</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex-none w-64 snap-start">
+<div class="bg-surface-container-low rounded-xl p-4 transition-transform hover:-translate-y-2 cursor-pointer group">
+<div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 relative">
+<img alt="Max Havelaar" class="w-full h-full object-cover book-inner-stroke" data-alt="Vintage colonial era book, worn paper texture, elegant serif typography, historical archive feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfiFCv3vhsLWa-LUoZTZ125V-BqypWkfJ70Wwi_vcsYs4Azi1Qzvto-mD00B-0QPMLYeB3HtVvQJ6bCYMlfXMSi8ySthSiR2uOn03sEd8w4uMmDlYSR_kakCnLBtBsnXHAatCwkGxBwBA1IcjlD2oBh22jT7P34HsNqTUhk4rwqXIImmoZJd0Pk8AeQgWQxwMncJjIdkNVG927tGPhak3yS4Kko1XbQEs2wKsWQgn4Ca-TwRZ1ZwCTHTqQKPQ5ttTc98fdfc157G4"/>
+</div>
+<h4 class="font-headline font-bold text-primary mb-1">Max Havelaar</h4>
+<p class="text-xs text-secondary font-label uppercase tracking-widest">Multatuli</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#e1dca9] dark:bg-[#1e1c00] w-full py-12 px-8 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto items-center">
+<div class="text-[#442a22] dark:text-[#f6f0bb] font-body text-sm uppercase tracking-wider opacity-100 transition-opacity">
+                © 2024 The Academic Atelier. All rights reserved.
+            </div>
+<div class="flex flex-wrap gap-6 justify-start md:justify-end">
+<a class="font-['Manrope'] text-sm uppercase tracking-wider text-[#75584d] dark:text-[#d4c3be] hover:text-[#442a22] dark:hover:text-[#fffadf] transition-opacity hover:opacity-80" href="#">Institutional Archive</a>
+<a class="font-['Manrope'] text-sm uppercase tracking-wider text-[#75584d] dark:text-[#d4c3be] hover:text-[#442a22] dark:hover:text-[#fffadf] transition-opacity hover:opacity-80" href="#">Digital Collections</a>
+<a class="font-['Manrope'] text-sm uppercase tracking-wider text-[#75584d] dark:text-[#d4c3be] hover:text-[#442a22] dark:hover:text-[#fffadf] transition-opacity hover:opacity-80" href="#">Research Ethics</a>
+<a class="font-['Manrope'] text-sm uppercase tracking-wider text-[#75584d] dark:text-[#d4c3be] hover:text-[#442a22] dark:hover:text-[#fffadf] transition-opacity hover:opacity-80" href="#">Library Map</a>
+</div>
+</div>
+</footer>
+</body></html>

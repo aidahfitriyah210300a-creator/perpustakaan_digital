@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Perpustakaan Cendekia | The Digital Curator Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,900;1,400;1,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#574500",
+                        "surface-container-highest": "#eae4b1",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-secondary-fixed-variant": "#5b4137",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#34310d",
+                        "secondary": "#75584d",
+                        "secondary-fixed-dim": "#e4beb2",
+                        "secondary-container": "#fed7ca",
+                        "primary-container": "#5d4037",
+                        "primary": "#442a22",
+                        "surface-dim": "#e1dca9",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "outline-variant": "#d4c3be",
+                        "inverse-primary": "#e7bdb1",
+                        "surface": "#fffadf",
+                        "on-secondary-container": "#795c51",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#1e1c00",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#77574d",
+                        "on-background": "#1e1c00",
+                        "surface-bright": "#fffadf",
+                        "on-surface-variant": "#504441",
+                        "primary-fixed-dim": "#e7bdb1",
+                        "on-primary-fixed-variant": "#5d4037",
+                        "tertiary-fixed": "#ffe088",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#cba72f",
+                        "surface-container-low": "#fbf5c1",
+                        "inverse-on-surface": "#f8f3be",
+                        "on-secondary-fixed": "#2b160f",
+                        "on-primary-container": "#d4ada1",
+                        "surface-container": "#f6f0bb",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#ffdbce",
+                        "outline": "#827470",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#eae4b1",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#ffdbd0",
+                        "error": "#ba1a1a",
+                        "background": "#fffadf",
+                        "surface-container-high": "#f0eab6",
+                        "on-tertiary-container": "#4e3d00",
+                        "on-primary-fixed": "#2c160e",
+                        "tertiary": "#735c00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<link rel="stylesheet" href="style.css">
+  </head>
+<body class="flex flex-col min-h-screen">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 w-full bg-[#fffadf]/80 dark:bg-stone-900/80 backdrop-blur-md shadow-sm dark:shadow-none border-none">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">menu_book</span>
+<span class="text-2xl font-serif font-black text-[#442a22] dark:text-[#fffadf]">Perpustakaan Cendekia</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#442a22] dark:text-[#fffadf] font-bold border-b-2 border-[#442a22] dark:border-[#e1dca9] pb-1 font-serif italic" href="#">Home</a>
+<a class="text-[#75584d] dark:text-stone-400 font-medium hover:text-[#442a22] transition-colors duration-300 font-serif italic" href="#">Collections</a>
+<a class="text-[#75584d] dark:text-stone-400 font-medium hover:text-[#442a22] transition-colors duration-300 font-serif italic" href="#">Services</a>
+<a class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-all" href="#">Join as Member</a>
+</div>
+</nav>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative h-[751px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="stunning modern library interior with floor-to-ceiling wooden bookshelves and warm cinematic lighting through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUg9jjc5Ho8BKwn5rxa0rN7gE3uIspJ4fTiPyP8pLug9bUetcukfOaSXsJqT9N5WupsL9dstufMyuYfRM61XYeIXx4uWUqGdw40KOaPwxf8PQqqTaS9-Vus5hFyHuzPx0IGhJrBUbTLPhFGG-YPtcxKtAoh4dBdA47peEUymHNV7ZAAGb7SHdHbxkRcC0p3j4Lkb1-EmXJcEbbtAsHRRY_PX_EpWZWhiCy9yeW6ukEMl8d5nm2ROMLVXSUbS6_By0IrKgPfkNfXDI"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1.5 mb-6 rounded-full bg-tertiary/20 text-tertiary-fixed-dim text-xs font-bold tracking-[0.2em] uppercase">The Digital Curator</span>
+<h1 class="text-6xl md:text-7xl font-serif font-bold text-surface mb-8 leading-[1.1] -tracking-tight italic">
+                        Jelajahi Ribuan Kisah &amp; Pengetahuan
+                    </h1>
+<p class="text-lg text-surface/80 font-body mb-10 max-w-xl leading-relaxed">
+                        Kami mengkurasi arsip literasi terbaik dunia untuk masa depan cerdas Indonesia. Sebuah ruang di mana tradisi bertemu dengan teknologi modern.
+                    </p>
+<!-- The Nexus (Search Bar) -->
+<div class="relative max-w-2xl group">
+<div class="absolute inset-y-0 left-6 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-primary">search</span>
+</div>
+<input class="w-full bg-surface-container-high border-none rounded-full py-6 pl-16 pr-8 text-lg font-serif italic focus:ring-2 focus:ring-primary-container transition-all shadow-xl" placeholder="Cari judul buku, penulis, atau topik..." type="text"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Statistics Bar -->
+<section class="bg-surface-container py-12 relative z-20">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center md:text-left">
+<p class="text-4xl font-serif font-black text-primary">20,000+</p>
+<p class="text-xs font-bold text-secondary uppercase tracking-widest mt-1">Koleksi Buku</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-4xl font-serif font-black text-primary">5,000+</p>
+<p class="text-xs font-bold text-secondary uppercase tracking-widest mt-1">Anggota Aktif</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-4xl font-serif font-black text-primary">15+</p>
+<p class="text-xs font-bold text-secondary uppercase tracking-widest mt-1">Penghargaan</p>
+</div>
+<div class="text-center md:text-left">
+<p class="text-4xl font-serif font-black text-primary">24/7</p>
+<p class="text-xs font-bold text-secondary uppercase tracking-widest mt-1">Akses Digital</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Books Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<span class="text-xs font-bold text-secondary uppercase tracking-[0.3em] block mb-4">Editorial Choice</span>
+<h2 class="text-5xl font-serif font-bold text-on-surface italic">Rekomendasi Pekan Ini</h2>
+</div>
+<a class="text-primary font-bold border-b border-primary/30 pb-1 hover:border-primary transition-all" href="koleksi.html">Lihat Semua Koleksi →</a>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8">
+<!-- Book Card 1 -->
+<div class="curation-card group cursor-pointer">
+<div class="book-cover mb-4 rounded-xl overflow-hidden shadow-lg transition-transform duration-500 bg-surface-container-low aspect-[2/3]">
+<img class="w-full h-full object-cover" data-alt="vintage book cover with elegant typography on aged paper texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyVkvhJ2vSwAA5XP-fW_WTQdFvkPqjJzUIUSLi2uepPT9nrIbpIAztTkqqPvlSjERTVnmP_ZeMFz0mjGF7ad7zjmI0SXrldz-K6CssDHSc3qUaL8RQqvQx7qixyfNPVwnRrw9XdjTqCeGm7XpPyV7R7swFFJCilPpGipmkPzKJhcp9BbNO_PeQVVFavo7x3qysVOv1pa7wfivsOShJzrkRvifJbwUa1F4gbVEoqwm-HvBCWGkaHlmN1sI3mL14zzJBVfA7eOyJ-Z4"/>
+</div>
+<h3 class="font-serif font-bold text-on-surface leading-snug group-hover:text-primary transition-colors">The Great Gatsby</h3>
+<p class="text-sm text-secondary mb-2">F. Scott Fitzgerald</p>
+<div class="flex text-tertiary text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+</div>
+<!-- Book Card 2 -->
+<div class="curation-card group cursor-pointer">
+<div class="book-cover mb-4 rounded-xl overflow-hidden shadow-lg transition-transform duration-500 bg-surface-container-low aspect-[2/3]">
+<img class="w-full h-full object-cover" data-alt="minimalist modern book cover with abstract geometric shapes and bold typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUJ2ww4A8t4E9R7_430ckrYnjUgwmL2DM3FemQ1VOWA3kGE4LWfyUOl4xUPYsXdHMVQfPdHs8ZS55oCKfTGgJNq5xgQ4Ro2KHjaDg1QMZu_RptPlTtwOs1seKbs826W5aQCqWsFX6h1Egrz29RwWWQnEWqLtwT-zeowH-oBqwvYyqnLwZOKWNSQKVYwIzkCFq8iiLdG3fWvmhzCsE7jpzH5UltSRndyi3f1te7uSw7drRbfTwum9anv0bGh7tmWdVfJ1sVZ0PRCMc"/>
+</div>
+<h3 class="font-serif font-bold text-on-surface leading-snug group-hover:text-primary transition-colors">Digital Minimalism</h3>
+<p class="text-sm text-secondary mb-2">Cal Newport</p>
+<div class="flex text-tertiary text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- Book Card 3 -->
+<div class="curation-card group cursor-pointer">
+<div class="book-cover mb-4 rounded-xl overflow-hidden shadow-lg transition-transform duration-500 bg-surface-container-low aspect-[2/3]">
+<img class="w-full h-full object-cover" data-alt="academic textbook cover with intricate line art and deep burgundy colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJrLOFV9XXXLgqLolpYFftXrB9FUDFLhe0us3BOcWGGqLKWcIMkma-NXHOqqM3eWAjVrF00dstwbLTIL_l1JIY3YnpMA4uaAzVe3qasATeLxYvQ1pb-16PfGUfXiv_fTVsGP8Oh23G0VM6kjXuMTTrSnOZMAQZsrel9jK4fsfQsl81zChPga1kyA3o9wg50_UuvcjiB2iIuBXElqIvqSX6tWsVRYG3wEG55sOVU3aTCCdt3Dq_ska5lF7HDHximKd1DzfbIC2b_HA"/>
+</div>
+<h3 class="font-serif font-bold text-on-surface leading-snug group-hover:text-primary transition-colors">Sapiens</h3>
+<p class="text-sm text-secondary mb-2">Yuval Noah Harari</p>
+<div class="flex text-tertiary text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+</div>
+</div>
+<!-- Book Card 4 -->
+<div class="curation-card group cursor-pointer">
+<div class="book-cover mb-4 rounded-xl overflow-hidden shadow-lg transition-transform duration-500 bg-surface-container-low aspect-[2/3]">
+<img class="w-full h-full object-cover" data-alt="artistic book cover showing a surrealist painting with soft pastel colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqzD_DVWgQ8xxCcXtbHhOC3nYhLCqeKeLGxdJc6OJjVup9wVz3Cp85j-p1IWcMY9ML6Bpy0T-jidZyuJaSWbBlAekSLCUHHaePW3oC4awkQJGaYqe-UJ4XBgf6gmHUh2VqBOY1I33wXSw-AubXoCts2m5qPGSghBnlRH7310wcCwWitytyxsrZ0p1TvpVnLS0Z3ni2Jtl0L9cp7XY1Va3B7MVvdV39nyfQYC9R4UP_hXH3ij2tvmXFLt7fejRPwoSoWdE9B7kC5Q4"/>
+</div>
+<h3 class="font-serif font-bold text-on-surface leading-snug group-hover:text-primary transition-colors">Bumi Manusia</h3>
+<p class="text-sm text-secondary mb-2">Pramoedya Ananta Toer</p>
+<div class="flex text-tertiary text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- Book Card 5 -->
+<div class="curation-card group cursor-pointer">
+<div class="book-cover mb-4 rounded-xl overflow-hidden shadow-lg transition-transform duration-500 bg-surface-container-low aspect-[2/3]">
+<img class="w-full h-full object-cover" data-alt="contemporary fiction book cover with bright illustration and expressive brushwork" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPg5hL5hvTXKi2zksNMN3-sJWgMHWwBKbbvFYGN9frT2TLECY3MNC0U7KifCwepTSd5miLwyJqrnORnVBy8m6c2qwYJtUUJs8m7XYrqLBsCiT7PDOl0VOvCNPrlyTPIptnrm4hhwBS9LnNEE2Wki7VR75GxUStZfXPBIQlC6OIe89uIx3pHlYDGFWhmpGUq9gbtuW_HVXdxP8WDcHq7JVyuofb4MTsY8U0k-ADbhcUAwzpOVPxopVhVlOAv2d0HIFkTm_wWYk8MB0"/>
+</div>
+<h3 class="font-serif font-bold text-on-surface leading-snug group-hover:text-primary transition-colors">Filosofi Teras</h3>
+<p class="text-sm text-secondary mb-2">Henry Manampiring</p>
+<div class="flex text-tertiary text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+</div>
+<!-- Book Card 6 -->
+<div class="curation-card group cursor-pointer">
+<div class="book-cover mb-4 rounded-xl overflow-hidden shadow-lg transition-transform duration-500 bg-surface-container-low aspect-[2/3]">
+<img class="w-full h-full object-cover" data-alt="classic literature book cover with ornate border and gold leaf detailing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgA95yWYOV0aESa9bK665QMwh0QVelSuTls5MnK9djslwje6ue_0EcsngmFbIrApKHl1ZtqEyr03mpLCexFotzltV0aG3_gql1GEv5Z8SS1jrrzxqp0Sb5txxQET0X4ok-hOGJXgBfQgoxL32op3cd7PlTuQ-WNyr_is3PuS7hWAiK3lHb8BF5q0ohgYAh6GZNat4yfY7oGvuKlt-6GAfwnXNi7JqDth1Wb0AbMDK1ZV6AAf-hvmtvOTcD0mDJrkRISo2AkQzkkFg"/>
+</div>
+<h3 class="font-serif font-bold text-on-surface leading-snug group-hover:text-primary transition-colors">Pride &amp; Prejudice</h3>
+<p class="text-sm text-secondary mb-2">Jane Austen</p>
+<div class="flex text-tertiary text-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="text-xs font-bold text-secondary uppercase tracking-[0.3em]">Layanan Kami</span>
+<h2 class="text-5xl font-serif font-bold text-on-surface mt-4">Kenyamanan Literasi Modern</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="p-10 bg-surface rounded-xl hover:shadow-2xl transition-all border-b-4 border-primary">
+<span class="material-symbols-outlined text-5xl text-primary mb-6">tablet_android</span>
+<h3 class="text-2xl font-serif font-bold mb-4 italic">Perpustakaan E-book</h3>
+<p class="text-on-surface-variant leading-relaxed">Akses ribuan judul digital kapanpun dan dimanapun melalui aplikasi eksklusif kami bagi seluruh anggota.</p>
+</div>
+<div class="p-10 bg-surface rounded-xl hover:shadow-2xl transition-all border-b-4 border-tertiary">
+<span class="material-symbols-outlined text-5xl text-tertiary mb-6">meeting_room</span>
+<h3 class="text-2xl font-serif font-bold mb-4 italic">Ruang Belajar Privat</h3>
+<p class="text-on-surface-variant leading-relaxed">Fasilitas ruang tenang dengan koneksi serat optik berkecepatan tinggi untuk fokus maksimal.</p>
+</div>
+<div class="p-10 bg-surface rounded-xl hover:shadow-2xl transition-all border-b-4 border-secondary">
+<span class="material-symbols-outlined text-5xl text-secondary mb-6">psychology</span>
+<h3 class="text-2xl font-serif font-bold mb-4 italic">Bantuan Riset</h3>
+<p class="text-on-surface-variant leading-relaxed">Pustakawan profesional kami siap membantu Anda menemukan referensi akademik yang kredibel.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative">
+<div class="grid lg:grid-cols-5 gap-16 items-center">
+<div class="lg:col-span-2">
+<span class="text-xs font-bold text-secondary uppercase tracking-[0.3em]">Testimonials</span>
+<h2 class="text-5xl font-serif font-bold text-on-surface mt-4 mb-8 italic">Apa Kata Pembaca Kami?</h2>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-surface transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full bg-primary text-surface flex items-center justify-center shadow-lg hover:opacity-90 transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-3">
+<div class="bg-surface-container-high p-12 rounded-3xl relative">
+<span class="material-symbols-outlined text-7xl text-primary-container/20 absolute top-8 right-8">format_quote</span>
+<p class="text-2xl font-serif italic text-on-surface mb-8 leading-relaxed">
+                                "Perpustakaan Cendekia bukan sekadar tempat menyimpan buku. Ini adalah oase intelektual di tengah hiruk pikuk kota. Desainnya yang tenang sangat mendukung produktivitas saya dalam menulis."
+                            </p>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a confident woman in creative professional attire with a warm friendly smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwgmDBdjBNZ2D3ViX7OhVdqU3jqZkiWIzR5_NgQraokK6t5Jz0p_am_IIUDN-v2Yf37A4gsHzb79Vlb57CDzF5UzbrynOpyH2K1zAn_CsDLUOeRGMSWjlYsCw_ijs0hCQFO6UAn5t07RKmsBKVEcZr-wx7vqONZUJw4zRa6hVi1FlzX6S9BIAMONpMF0PEVxCP5YGTiDzURpqNycw3SWI0VXklvY9S8_AM1vqtIbCq0SXODrSSLRS4K340S9MT1YOICvK9_LEWK6k"/>
+</div>
+<div>
+<h4 class="font-serif font-bold text-lg">Dr. Anindita Putri</h4>
+<p class="text-sm text-secondary uppercase tracking-widest font-bold">Penulis &amp; Akademisi</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 bg-[#e1dca9] dark:bg-stone-950 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-lg font-serif font-bold text-[#442a22] dark:text-[#fffadf] block mb-6">Perpustakaan Cendekia</span>
+<p class="text-[#75584d] dark:text-stone-500 font-sans text-sm uppercase tracking-widest leading-relaxed">
+                    © 2024 Perpustakaan Cendekia. The Digital Curator Archive.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="text-xs font-bold text-[#442a22] uppercase tracking-[0.2em] mb-6">Information</h4>
+<ul class="space-y-3">
+<li><a class="text-[#75584d] dark:text-stone-500 font-sans text-sm uppercase tracking-widest hover:underline decoration-[#75584d] underline-offset-4" href="#">Opening Hours: Mon-Sat 08:00 - 20:00</a></li>
+<li><a class="text-[#75584d] dark:text-stone-500 font-sans text-sm uppercase tracking-widest hover:underline decoration-[#75584d] underline-offset-4" href="#">Location: 123 Academic Way</a></li>
+<li><a class="text-[#75584d] dark:text-stone-500 font-sans text-sm uppercase tracking-widest hover:underline decoration-[#75584d] underline-offset-4" href="#">Library Map</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-xs font-bold text-[#442a22] uppercase tracking-[0.2em] mb-6">Social</h4>
+<ul class="space-y-3">
+<li><a class="text-[#75584d] dark:text-stone-500 font-sans text-sm uppercase tracking-widest hover:underline decoration-[#75584d] underline-offset-4" href="#">Facebook</a></li>
+<li><a class="text-[#75584d] dark:text-stone-500 font-sans text-sm uppercase tracking-widest hover:underline decoration-[#75584d] underline-offset-4" href="#">Instagram</a></li>
+<li><a class="text-[#75584d] dark:text-stone-500 font-sans text-sm uppercase tracking-widest hover:underline decoration-[#75584d] underline-offset-4" href="#">Twitter/X</a></li>
+</ul>
+</div>
+<div class="rounded-xl overflow-hidden shadow-inner grayscale contrast-125 bg-stone-200 h-40">
+<img class="w-full h-full object-cover" data-alt="abstract minimalist map illustration showing city streets in clean dark architectural lines" data-location="Jakarta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfJpW_oEPIzlbxD9QUBFlfi1UKyM5HnYRnMC7nxNZ37BhkOetjcB_xJnZMNxGWIwONFwN28nXFFtRHZ2ogBkf39nFEQlDo-2-hwDxE6IZvRxpBK4rtbQ3TLCsJr6mCcqDmfjQMt9mJdWuyU4MAiROCWRiH68YHKZh0kyulhAg4n71sdZkEbTIWCxbntmfRtGsLsVchsUFtkmTlJkcPL1yNGrNzqLM1BXSida9jK6UPfJFHbmvme7ofIN2o3GncEsPZt9YhSHCgGNY"/>
+</div>
+</div>
+</footer>
+</body></html>
